@@ -1,0 +1,47 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply transition-colors duration-200;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-deep-ink text-gray-100 font-body;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(168, 120, 48, 0.03) 0px,
+      rgba(168, 120, 48, 0.03) 1px,
+      transparent 1px,
+      transparent 40px
+    );
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display text-forge-gold;
+}
+
+input, textarea, select {
+  @apply bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-forge-gold;
+}
+
+button {
+  @apply px-4 py-2 rounded font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-forge-gold text-deep-ink hover:bg-opacity-90 font-semibold;
+}
+
+.btn-secondary {
+  @apply bg-gray-800 text-gray-100 border border-gray-700 hover:bg-gray-700;
+}
+
+.section-card {
+  @apply bg-gray-900 border border-gray-800 rounded-lg p-4 mb-4;
+}
